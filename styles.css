@@ -1,5 +1,6 @@
 /* Futuristic Monochrome Design System (Black & Ash) */
 :root {
+<<<<<<< HEAD
   --bg-main: #050505;          /* Pure, deep black background */
   --bg-dark-block: #0e0e0e;    /* Slightly lighter ash-black for cards */
   --text-on-light: #e0e0e0;    /* Bright ash/silver for primary text */
@@ -11,6 +12,18 @@
   --accent: #d4d4d4;           /* Bright silver accent */
   --accent-alt: #ffffff;       /* Pure white accent */
   
+=======
+  --bg-main: #0F172A;         /* Deep Slate Blue background */
+  --bg-dark-block: #1E293B;   /* Muted Slate card/section background */
+  --text-on-light: #F8FAFC;   /* Crisp Off-White text */
+  --text-on-dark: #F8FAFC;    /* Crisp Off-White text */
+  --text-muted-light: #94A3B8;/* Muted Slate Gray details */
+  --text-muted-dark: #94A3B8; /* Muted Slate Gray details */
+  --border-light: #334155;    /* Slate-700 border */
+  --border-dark: #334155;     /* Slate-700 border */
+  --accent: #38BDF8;          /* Electric Sky Blue */
+  --accent-alt: #818CF8;      /* Indigo */
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
   --font-sans: 'Outfit', sans-serif;
   --font-mono: 'Fira Code', monospace;
   --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -51,9 +64,14 @@ body {
 
 /* Section borders */
 section {
+<<<<<<< HEAD
   padding: 100px 8%;
   border-bottom: 1px solid var(--border-light);
   position: relative;
+=======
+  padding: 80px 8%;
+  border-bottom: 1px solid var(--border-light);
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
 }
 
 /* Navigation Bar */
@@ -113,10 +131,20 @@ section {
   letter-spacing: -1px;
 }
 
+<<<<<<< HEAD
 .section-title::before {
   content: '>';
   color: var(--text-muted-dark);
   margin-right: 15px;
+=======
+.section-title::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: var(--accent);
+  margin: 12px auto 0;
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
 }
 
 .section-subtitle {
@@ -185,9 +213,15 @@ section {
 
 .badge {
   display: inline-block;
+<<<<<<< HEAD
   background-color: transparent;
   color: var(--text-on-light);
   border: 1px solid var(--text-muted-dark);
+=======
+  background-color: rgba(56, 189, 248, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
   padding: 6px 14px;
   font-size: 0.8rem;
   font-weight: 500;
@@ -213,13 +247,20 @@ section {
   margin-bottom: 40px;
 }
 
+<<<<<<< HEAD
 /* Buttons */
 .btn-primary, .btn-primary-small {
   background-color: transparent;
   color: var(--text-on-dark);
+=======
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--bg-main);
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
   padding: 12px 28px;
   font-weight: 600;
   display: inline-block;
+<<<<<<< HEAD
   border: 1px solid var(--text-on-light);
   transition: var(--transition-smooth);
   text-decoration: none;
@@ -256,6 +297,16 @@ section {
   height: 15px;
   border-bottom: 2px solid var(--text-muted-dark);
   border-right: 2px solid var(--text-muted-dark);
+=======
+  border: 2px solid var(--accent);
+  transition: var(--transition-smooth);
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--accent);
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
 }
 
 /* About Grid Layout */
@@ -332,7 +383,11 @@ section {
   font-weight: 300;
   margin-bottom: 5px;
   font-family: var(--font-mono);
+<<<<<<< HEAD
   color: var(--text-on-dark);
+=======
+  color: var(--accent-alt);
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
 }
 
 .stat-label {
@@ -358,7 +413,11 @@ section {
 }
 
 .skills-table th {
+<<<<<<< HEAD
   background-color: var(--bg-main);
+=======
+  background-color: rgba(255, 255, 255, 0.05);
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
   color: var(--text-on-dark);
   padding: 18px 24px;
   border-bottom: 1px solid var(--border-dark);
@@ -374,8 +433,13 @@ section {
 }
 
 .skills-table tbody tr:hover td {
+<<<<<<< HEAD
   background-color: rgba(255, 255, 255, 0.03);
   color: var(--text-on-light);
+=======
+  background-color: rgba(255, 255, 255, 0.02);
+  color: var(--text-on-dark);
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
 }
 
 .category-cell {
@@ -429,8 +493,13 @@ section {
   content: '>';
   position: absolute;
   left: 0;
+<<<<<<< HEAD
   color: var(--text-on-dark);
   font-family: var(--font-mono);
+=======
+  color: var(--accent);
+  font-size: 1rem;
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
 }
 
 /* Project Category Filters */
@@ -535,22 +604,37 @@ section {
 }
 
 .project-link-btn {
+<<<<<<< HEAD
   background-color: transparent;
   color: var(--text-on-dark);
+=======
+  background-color: var(--accent);
+  color: var(--bg-main);
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
   padding: 10px 20px;
   font-size: 0.8rem;
   font-family: var(--font-mono);
   display: inline-block;
   text-align: center;
   width: max-content;
+<<<<<<< HEAD
   border: 1px solid var(--text-on-dark);
+=======
+  border: 2px solid var(--accent);
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
   transition: var(--transition-smooth);
   text-decoration: none;
 }
 
 .project-link-btn:hover {
+<<<<<<< HEAD
   background-color: var(--text-on-dark);
   color: var(--bg-main);
+=======
+  background-color: transparent;
+  color: var(--accent);
+  cursor: pointer;
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
 }
 
 /* Contact Block */
@@ -585,7 +669,11 @@ section {
 }
 
 .contact-link-box {
+<<<<<<< HEAD
   background-color: var(--bg-main);
+=======
+  background-color: rgba(255, 255, 255, 0.02);
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
   border: 1px solid var(--border-dark);
   padding: 25px;
   display: flex;
@@ -596,7 +684,12 @@ section {
 }
 
 .contact-link-box:hover {
+<<<<<<< HEAD
   border-color: var(--text-muted-light);
+=======
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+>>>>>>> 3df6494 (style: update color palette to deep slate blue theme and refine UI component styles)
 }
 
 .contact-link-box .link-icon {
@@ -643,26 +736,32 @@ section {
 
 /* Active Nav Links styling */
 .nav-links a.active {
-  color: var(--text-on-dark) !important;
+  color: var(--accent) !important;
   text-decoration: underline !important;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 /* Primary Small Button (Navbar Contact) */
 .btn-primary-small {
-  background-color: var(--bg-dark-block);
-  color: var(--text-on-dark);
+  background-color: transparent;
+  color: var(--accent);
   padding: 8px 18px;
   border-radius: var(--border-radius-md);
   font-weight: 600;
   display: inline-block;
-  border: 2px solid var(--text-on-dark);
+  border: 2px solid var(--accent);
   transition: var(--transition-smooth);
   text-decoration: none !important;
 }
 
 .btn-primary-small:hover {
-  background-color: var(--text-on-dark);
-  color: var(--bg-dark-block);
+  background-color: var(--accent) !important;
+  color: #000000 !important;
+  text-decoration: none !important;
 }
 
 /* Project Category Filters */
@@ -677,7 +776,7 @@ section {
 .filter-btn {
   background-color: transparent;
   color: var(--text-on-light);
-  border: 2px solid var(--bg-dark-block);
+  border: 2px solid var(--border-light);
   padding: 8px 20px;
   font-family: var(--font-sans);
   font-weight: 600;
@@ -688,12 +787,13 @@ section {
 }
 
 .filter-btn:hover {
-  background-color: rgba(18, 18, 18, 0.05);
+  background-color: rgba(255, 255, 255, 0.03);
 }
 
 .filter-btn.active {
-  background-color: var(--bg-dark-block);
-  color: var(--text-on-dark);
+  background-color: var(--accent);
+  color: var(--bg-main);
+  border-color: var(--accent);
 }
 
 /* Responsive */
