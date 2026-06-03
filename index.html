@@ -4,56 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MST Umme Sabiha | Portfolio</title>
-  <!-- Google Fonts for modern typography -->
+  <!-- Google Fonts for modern & futuristic typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Stylesheet & Script -->
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
 
+  <!-- Futuristic Grid Overlay -->
+  <div class="cyber-grid"></div>
+
   <!-- Navigation Bar -->
   <header class="navbar-container">
     <div class="logo">
-      <span class="logo-bracket">&lt;</span>Sabiha<span class="logo-bracket">/&gt;</span>
+      <span class="logo-bracket">[</span>SABIHA<span class="logo-bracket">]</span>
     </div>
     <nav class="nav-links">
-      <a href="#hero">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact" class="btn-primary-small">Contact</a>
+      <a href="#hero" class="nav-item" data-text="Home">Home</a>
+      <a href="#about" class="nav-item" data-text="About">About</a>
+      <a href="#projects" class="nav-item" data-text="Projects">Projects</a>
+      <a href="#skills" class="nav-item" data-text="Skills">Skills</a>
+      <a href="#contact" class="btn-primary-small">INIT_CONTACT</a>
     </nav>
   </header>
 
   <main>
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
-      <div class="badge">CCNA Candidate & Aspiring Network Engineer</div>
-      <h1>MST Umme Sabiha</h1>
-      <p class="tagline">
-        Passionate about building secure networks, administering Linux systems, and self-hosting independent cloud infrastructure. Currently exploring local DNS solutions and enterprise network routing topologies.
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn-primary">Explore Projects</a>
+      <div class="hero-content">
+        <!-- New Profile Photo Container -->
+        <div class="profile-img-container">
+          <div class="cyber-frame"></div>
+          <!-- Replace 'profile.jpg' with your actual image file path -->
+          <img src="profile.jpg" alt="Mst Umme Sabiha" class="profile-img">
+        </div>
+        
+        <div class="badge">SYS.STATUS: CCNA CANDIDATE</div>
+        <h1 class="glitch-text" data-text="MST Umme Sabiha">MST Umme Sabiha</h1>
+        <p class="tagline">
+          Passionate about building secure networks, administering Linux systems, and self-hosting independent cloud infrastructure. Currently exploring local DNS solutions and enterprise network routing topologies.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">EXECUTE // PROJECTS</a>
+        </div>
       </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about" class="about-section">
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title">SYS.INFO: About_Me</h2>
       <div class="about-grid">
-        <div class="about-text">
+        <div class="about-text cyber-panel">
           <p>
-            Hello! I am a Computer Science & Engineering student focused on building careers in <strong>Network Engineering</strong> and <strong>System Administration</strong>. My journey in web programming is driven by an understanding of how networks deliver data and how modern platforms are deployed securely.
+            Hello! I am a Computer Science & Engineering student focused on building careers in <strong class="highlight">Network Engineering</strong> and <strong class="highlight">System Administration</strong>. My journey in web programming is driven by an understanding of how networks deliver data and how modern platforms are deployed securely.
           </p>
           <p>
-            I run active system experiments using my own <strong>AWS</strong> and <strong>Oracle Cloud VPS</strong> instances, hosting tools that improve daily digital sovereignty. I'm actively pursuing professional <strong>CCNA</strong> studies to master routing protocols, security controls, and enterprise-grade networking systems.
+            I run active system experiments using my own <strong class="highlight">AWS</strong> and <strong class="highlight">Oracle Cloud VPS</strong> instances, hosting tools that improve daily digital sovereignty. I'm actively pursuing professional <strong class="highlight">CCNA</strong> studies to master routing protocols, security controls, and enterprise-grade networking systems.
           </p>
           <div class="quick-facts-box">
-            <h3>Quick Details</h3>
+            <h3>> QUERY_DETAILS</h3>
             <ul class="facts-list">
               <li><strong>Current Focus:</strong> CCNA Preparation, Linux System Administration</li>
               <li><strong>Personal Domain:</strong> <a href="http://salaxar.com" target="_blank" rel="noopener">salaxar.com</a></li>
@@ -67,11 +79,11 @@
             <span class="stat-label">In Training</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number">Linux</span>
+            <span class="stat-number">LINUX</span>
             <span class="stat-label">SysAdmin Focus</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number">Self-Hosted</span>
+            <span class="stat-number">HOSTED</span>
             <span class="stat-label">Active Apps</span>
           </div>
         </div>
@@ -80,22 +92,22 @@
 
     <!-- Dynamic Projects Section -->
     <section id="projects" class="projects-section">
-      <h2 class="section-title">Featured Projects</h2>
-      <p class="section-subtitle">Some projects done by <strong>Mst. Umme Sabiha</strong></p>
+      <h2 class="section-title">DIR /PROJECTS</h2>
+      <p class="section-subtitle">Executing compiled archives by <strong class="highlight">Mst. Umme Sabiha</strong></p>
 
       <!-- Project Category Filters -->
       <div class="project-filters">
-        <button class="filter-btn active" data-category="all">All Projects</button>
-        <button class="filter-btn" data-category="systems">Systems</button>
-        <button class="filter-btn" data-category="networking">Networking</button>
+        <button class="filter-btn active" data-category="all">[ ALL_PROJECTS ]</button>
+        <button class="filter-btn" data-category="systems">[ SYSTEMS ]</button>
+        <button class="filter-btn" data-category="networking">[ NETWORKING ]</button>
       </div>
 
       <!-- Project Cards Dynamic Container -->
       <div id="projects-grid" class="projects-grid">
         <!-- Rendered dynamically by inline script -->
         <noscript>
-          <div class="noscript-warning" style="background-color: var(--bg-dark-block); color: var(--text-on-dark); border: 1px solid var(--border-dark);">
-            Please enable JavaScript to load the dynamic projects database.
+          <div class="noscript-warning cyber-panel">
+            ERR_JS_DISABLED: Please enable JavaScript to load the dynamic projects database.
           </div>
         </noscript>
       </div>
@@ -103,16 +115,16 @@
 
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
-      <h2 class="section-title">Technical Skills</h2>
+      <h2 class="section-title">TECH_STACK</h2>
       
-      <!-- Styled Table showing core skills and purposes -->
+      <!-- Styled Table -->
       <div class="table-container">
         <table class="skills-table">
           <thead>
             <tr>
-              <th>Domain Category</th>
-              <th>Technologies & Protocols</th>
-              <th>Practical Application</th>
+              <th>DOMAIN_CATEGORY</th>
+              <th>TECHNOLOGIES_&_PROTOCOLS</th>
+              <th>PRACTICAL_APPLICATION</th>
             </tr>
           </thead>
           <tbody>
@@ -142,7 +154,7 @@
 
       <!-- Div blocks mapping list items -->
       <div class="skills-boxes-grid">
-        <div class="skill-box">
+        <div class="skill-box cyber-panel">
           <div class="skill-icon">🌐</div>
           <h3>Networking Focus</h3>
           <ul class="skills-list">
@@ -152,7 +164,7 @@
             <li>Cisco Packet Tracer designs</li>
           </ul>
         </div>
-        <div class="skill-box">
+        <div class="skill-box cyber-panel">
           <div class="skill-icon">🐧</div>
           <h3>Systems & Cloud</h3>
           <ul class="skills-list">
@@ -162,7 +174,7 @@
             <li>AdGuard Home & DNS systems</li>
           </ul>
         </div>
-        <div class="skill-box">
+        <div class="skill-box cyber-panel">
           <div class="skill-icon">💻</div>
           <h3>Web Frontend</h3>
           <ul class="skills-list">
@@ -177,19 +189,19 @@
 
     <!-- Contact & Footer Section -->
     <section id="contact" class="contact-section">
-      <div class="contact-card">
-        <h2>Let's Connect</h2>
-        <p>I am always open to discussing networking principles, Cisco topologies, Linux setups, and server security. Feel free to visit my links!</p>
+      <div class="contact-card cyber-panel">
+        <h2>PING /CONNECT</h2>
+        <p>Awaiting incoming connections for networking principles, Cisco topologies, Linux setups, and server security discussions.</p>
         
         <div class="contact-links-grid">
           <a href="mailto:sabiha@salaxar.com" class="contact-link-box">
             <span class="link-icon">✉️</span>
-            <span class="link-title">Email Address</span>
+            <span class="link-title">SECURE_MAIL</span>
             <span class="link-url">sabiha@salaxar.com</span>
           </a>
           <a href="https://www.linkedin.com/in/umme-sabiha/" target="_blank" rel="noopener" class="contact-link-box">
             <span class="link-icon">🔗</span>
-            <span class="link-title">LinkedIn Profile</span>
+            <span class="link-title">LINKEDIN_NODE</span>
             <span class="link-url">linkedin.com/in/umme-sabiha</span>
           </a>
         </div>
@@ -198,10 +210,9 @@
   </main>
 
   <footer class="main-footer">
-    <p>&copy; 2026 MST Umme Sabiha. Built with HTML, CSS, & JSON.</p>
-    <p class="academic-note">Ecommerce & Web Programming - Assignment 01</p>
+    <p>&copy; 2026 MST Umme Sabiha. TERMINAL UI.</p>
+    <p class="academic-note">SESSION: Ecommerce & Web Programming - Assignment 01</p>
   </footer>
-
 
 </body>
 </html>
