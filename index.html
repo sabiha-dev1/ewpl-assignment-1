@@ -1,16 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MST Umme Sabiha | Portfolio</title>
+  <!-- Google Fonts for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hello World</h1>
-        <p>Welcome to my portfolio! This is the initial commit setup.</p>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-container">
+    <div class="logo">
+      <span class="logo-bracket">&lt;</span>Sabiha<span class="logo-bracket">/&gt;</span>
     </div>
-    <script src="script.js"></script>
+    <nav class="nav-links">
+      <a href="#hero" style="color: white;" >Home</a>
+      <a href="#about" style="color: white;">About</a>
+      <a href="#projects" style="color: white;">Projects</a>
+      <a href="#skills" style="color: white;">Skills</a>
+      <a href="#contact" class="btn-primary-small" style="color: white; ">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="badge">CCNA Candidate & Aspiring Network Engineer</div>
+      <h1>MST Umme Sabiha</h1>
+      <p class="tagline">
+        Passionate about building secure networks, administering Linux systems, and self-hosting independent cloud infrastructure. Currently exploring local DNS solutions and enterprise network routing topologies.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">Explore Projects</a>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hello! I am a Computer Science & Engineering student focused on building careers in <strong>Network Engineering</strong> and <strong>System Administration</strong>. My journey in web programming is driven by an understanding of how networks deliver data and how modern platforms are deployed securely.
+          </p>
+          <p>
+            I run active system experiments using my own <strong>AWS</strong> and <strong>Oracle Cloud VPS</strong> instances, hosting tools that improve daily digital sovereignty. I'm actively pursuing professional <strong>CCNA</strong> studies to master routing protocols, security controls, and enterprise-grade networking systems.
+          </p>
+          <div class="quick-facts-box">
+            <h3>Quick Details</h3>
+            <ul class="facts-list">
+              <li><strong>Current Focus:</strong> CCNA Preparation, Linux System Administration</li>
+              <li><strong>Personal Domain:</strong> <a href="http://salaxar.com" target="_blank" rel="noopener">salaxar.com</a></li>
+              <li><strong>Interests:</strong> Self-Hosting, DNS Security, Homelabbing, Server Virtualization</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about-stats-box">
+          <div class="stat-card">
+            <span class="stat-number">CCNA</span>
+            <span class="stat-label">In Training</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">Linux</span>
+            <span class="stat-label">SysAdmin Focus</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">Self-Hosted</span>
+            <span class="stat-label">Active Apps</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dynamic Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Some projects done by <strong>Mst. Umme Sabiha</strong></p>
+
+      <!-- Project Cards Dynamic Container -->
+      <div id="projects-grid" class="projects-grid">
+        <!-- Rendered dynamically by inline script -->
+        <noscript>
+          <div class="noscript-warning" style="background-color: var(--bg-dark-block); color: var(--text-on-dark); border: 1px solid var(--border-dark);">
+            Please enable JavaScript to load the dynamic projects database.
+          </div>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2 class="section-title">Technical Skills</h2>
+      
+      <!-- Styled Table showing core skills and purposes -->
+      <div class="table-container">
+        <table class="skills-table">
+          <thead>
+            <tr>
+              <th>Domain Category</th>
+              <th>Technologies & Protocols</th>
+              <th>Practical Application</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="category-cell">Networking</td>
+              <td>Cisco Packet Tracer, VLANs, Subnetting, DHCP, NAT</td>
+              <td>Designing secure and efficient enterprise multi-subnet networks.</td>
+            </tr>
+            <tr>
+              <td class="category-cell">System Administration</td>
+              <td>Linux (Ubuntu), Shell Scripting, Home Server Configs</td>
+              <td>Deploying, managing, and securing localized servers and services.</td>
+            </tr>
+            <tr>
+              <td class="category-cell">Cloud & Host Infrastructure</td>
+              <td>AWS VPS, Oracle Cloud (OCI), Local Domain Routing</td>
+              <td>Provisioning light cloud virtual servers and configuring public endpoints.</td>
+            </tr>
+            <tr>
+              <td class="category-cell">Web & Dev Tools</td>
+              <td>HTML5, CSS3, JavaScript, Git & GitHub</td>
+              <td>Writing neat scripts, structural layouts, and versioning code repositories.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Div blocks mapping list items -->
+      <div class="skills-boxes-grid">
+        <div class="skill-box">
+          <div class="skill-icon">🌐</div>
+          <h3>Networking Focus</h3>
+          <ul class="skills-list">
+            <li>Routing & Switching prep</li>
+            <li>VLAN segmentation and trunking</li>
+            <li>Static and Dynamic routing</li>
+            <li>Cisco Packet Tracer designs</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon">🐧</div>
+          <h3>Systems & Cloud</h3>
+          <ul class="skills-list">
+            <li>Linux terminal operation</li>
+            <li>Self-hosted service maintenance</li>
+            <li>Oracle OCI & AWS VPS servers</li>
+            <li>AdGuard Home & DNS systems</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon">💻</div>
+          <h3>Web Frontend</h3>
+          <ul class="skills-list">
+            <li>Semantic HTML5 layout structure</li>
+            <li>CSS3 variables & animations</li>
+            <li>Asynchronous Javascript & JSON</li>
+            <li>Responsive layouts & media queries</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-card">
+        <h2>Let's Connect</h2>
+        <p>I am always open to discussing networking principles, Cisco topologies, Linux setups, and server security. Feel free to visit my links!</p>
+        
+        <div class="contact-links-grid">
+          <a href="mailto:sabiha@salaxar.com" class="contact-link-box">
+            <span class="link-icon">✉️</span>
+            <span class="link-title">Email Address</span>
+            <span class="link-url">sabiha@salaxar.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/umme-sabiha/" target="_blank" rel="noopener" class="contact-link-box">
+            <span class="link-icon">🔗</span>
+            <span class="link-title">LinkedIn Profile</span>
+            <span class="link-url">linkedin.com/in/umme-sabiha</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2026 MST Umme Sabiha. Built with HTML, CSS, & JSON.</p>
+    <p class="academic-note">Ecommerce & Web Programming - Assignment 01</p>
+  </footer>
+
+  <!-- Inline Script (Replaces script.js as requested) -->
+  <script>
+    // Global variable to hold loaded project data from script.json
+    let allProjectsData = [];
+
+    // Once the document is fully loaded, initialize interactions
+    document.addEventListener("DOMContentLoaded", () => {
+      loadProjectsDatabase();
+      setupNavbarNavigation();
+    });
+
+    /**
+     * DYNAMIC JSON PROJECTS PARSER
+     * Uses modern fetch requests to load script.json, parse content, and render cards.
+     */
+    function loadProjectsDatabase() {
+      const projectsGrid = document.getElementById("projects-grid");
+      
+      // Fetch from the local script.json file
+      fetch("script.json")
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Network response was not OK when fetching script.json");
+          }
+          return response.json();
+        })
+        .then(data => {
+          allProjectsData = data;
+          renderProjects(allProjectsData);
+        })
+        .catch(error => {
+          console.error("Error loading project records:", error);
+          // Fallback display in case browser CORS blocks local file dynamic fetching
+          projectsGrid.innerHTML = `
+            <div class="noscript-warning" style="grid-column: 1 / -1; text-align: center; background-color: var(--bg-dark-block); color: var(--text-on-dark); border: 1px solid var(--border-dark); padding: 20px; border-radius: var(--border-radius-lg);">
+              <strong>Dynamic JSON Load Notice:</strong> Could not fetch dynamic script.json automatically via HTTP request. 
+              This is normal when opening raw HTML files directly in browsers without a local web server (CORS restriction).
+              <br><br>
+              <button onclick="loadStaticFallback()" class="filter-btn active" style="margin-top: 10px; border: 1px solid var(--border-dark); background-color: var(--bg-main); color: var(--text-on-light); padding: 8px 18px; cursor: pointer; border-radius: var(--border-radius-md);">Load Fallback Data from Script Memory</button>
+            </div>
+          `;
+        });
+    }
+
+    /**
+     * Fallback data in case the browser blocks direct local JSON fetching (CORS)
+     */
+    function loadStaticFallback() {
+      allProjectsData = [
+        {
+          "id": "project-dns",
+          "title": "Self-Hosted Private DNS Resolver (AdGuard Home)",
+          "category": "systems",
+          "icon": "🛡️",
+          "url": "http://dns.salaxar.com",
+          "description": "Configured and maintained a secure, private DNS resolver using AdGuard Home on a Linux VPS and home server environment. Implemented network-wide ad-blocking, family safety filtering, and custom local DNS records to safely route private queries. Managed and mapped securely to the domain: dns.salaxar.com.",
+          "tech": ["Linux (Ubuntu)", "AdGuard Home", "DNS Security", "Home Server Config", "dns.salaxar.com"]
+        },
+        {
+          "id": "project-vaultwarden",
+          "title": "Self-Hosted Secure Password Manager (Vaultwarden)",
+          "category": "systems",
+          "icon": "🔑",
+          "url": "https://vault.salaxar.com",
+          "description": "Deployed and self-hosted a private, robust Vaultwarden instance (lightweight Bitwarden server) to secure personal credentials and secure logins. Managed configuration through a secure Linux service utilizing encryption keys and VPS resources mapped privately to the domain: vault.salaxar.com.",
+          "tech": ["Linux (Ubuntu)", "Vaultwarden", "Credential Encryption", "VPS Cloud Hosting", "vault.salaxar.com"]
+        },
+        {
+          "id": "project-cisco",
+          "title": "Cisco Enterprise Network Design & Configuration",
+          "category": "networking",
+          "icon": "🌐",
+          "url": "",
+          "description": "Designed and simulated corporate network infrastructures in Cisco Packet Tracer. Performed practical configuration of switches, routers, VLAN segmentations, interface trunking protocols, custom IP subnetting, dynamic OSPF routing, and secure static routing paths.",
+          "tech": ["Cisco Packet Tracer", "Switch & Router Config", "VLANs & Trunking", "IP Subnetting", "OSPF & Static Routing"]
+        }
+      ];
+      renderProjects(allProjectsData);
+    }
+
+    /**
+     * Creates dynamic project cards in DOM
+     */
+    function renderProjects(projectsArray) {
+      const projectsGrid = document.getElementById("projects-grid");
+      projectsGrid.innerHTML = ""; // Clear existing grid space
+
+      if (projectsArray.length === 0) {
+        projectsGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--text-muted-light);">No projects found.</p>`;
+        return;
+      }
+
+      projectsArray.forEach(proj => {
+        // Create outer card div
+        const card = document.createElement("div");
+        card.className = "project-card";
+        card.id = proj.id;
+
+        // Build card header
+        const header = document.createElement("div");
+        header.className = "project-card-header";
+
+        const iconBox = document.createElement("div");
+        iconBox.className = "project-icon-box";
+        iconBox.textContent = proj.icon;
+
+        const badge = document.createElement("span");
+        badge.className = "project-category-badge";
+        badge.textContent = proj.category;
+
+        header.appendChild(iconBox);
+        header.appendChild(badge);
+
+        // Build text items
+        const title = document.createElement("h3");
+        title.textContent = proj.title;
+
+        const desc = document.createElement("p");
+        desc.textContent = proj.description;
+
+        // Build tech tags
+        const tagsWrapper = document.createElement("div");
+        tagsWrapper.className = "project-tech-tags";
+
+        proj.tech.forEach(t => {
+          const tag = document.createElement("span");
+          tag.className = "tech-tag";
+          tag.textContent = t;
+          tagsWrapper.appendChild(tag);
+        });
+
+        // Assemble components
+        card.appendChild(header);
+        card.appendChild(title);
+        card.appendChild(desc);
+        card.appendChild(tagsWrapper);
+
+        // Build and append Visit Website Button if URL exists
+        if (proj.url) {
+          const linkBtn = document.createElement("a");
+          linkBtn.href = proj.url;
+          linkBtn.target = "_blank";
+          linkBtn.rel = "noopener";
+          linkBtn.className = "project-link-btn";
+          linkBtn.textContent = "Visit Website ↗";
+          card.appendChild(linkBtn);
+        }
+
+        projectsGrid.appendChild(card);
+      });
+    }
+
+    /**
+     * Highlight navigation active state on scroll
+     */
+    function setupNavbarNavigation() {
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-links a");
+
+      window.addEventListener("scroll", () => {
+        let currentSectionId = "";
+
+        sections.forEach(section => {
+          const top = section.offsetTop;
+          if (window.scrollY >= (top - 150)) {
+            currentSectionId = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${currentSectionId}`) {
+            link.style.textDecoration = "underline";
+            link.style.color = "var(--text-on-dark)";
+          } else {
+            link.style.textDecoration = "none";
+            link.style.color = "var(--text-muted-dark)";
+          }
+        });
+      });
+    }
+  </script>
 </body>
 </html>
