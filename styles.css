@@ -1,13 +1,15 @@
 /* Elegant Beige, Black & White Design System */
 :root {
-  --bg-main: #F5F5DC;         /* Premium warm warm-beige background */
-  --bg-dark-block: #121212;   /* Pure rich black for cards, tables, header, and lists */
-  --text-on-light: #1c1c1c;   /* Dark charcoal/black for text on beige */
-  --text-on-dark: #ffffff;    /* Pure white for text on black blocks */
-  --text-muted-light: #6e6e6e;/* Muted gray for light background details */
-  --text-muted-dark: #b3b3b3; /* Muted gray for dark background details */
-  --border-light: #121212;    /* Dark borders on light background */
-  --border-dark: #333333;     /* Light borders on dark background */
+  --bg-main: #0F172A;         /* Deep Slate Blue background */
+  --bg-dark-block: #1E293B;   /* Muted Slate card/section background */
+  --text-on-light: #F8FAFC;   /* Crisp Off-White text */
+  --text-on-dark: #F8FAFC;    /* Crisp Off-White text */
+  --text-muted-light: #94A3B8;/* Muted Slate Gray details */
+  --text-muted-dark: #94A3B8; /* Muted Slate Gray details */
+  --border-light: #334155;    /* Slate-700 border */
+  --border-dark: #334155;     /* Slate-700 border */
+  --accent: #38BDF8;          /* Electric Sky Blue */
+  --accent-alt: #818CF8;      /* Indigo */
   --font-sans: 'Outfit', sans-serif;
   --font-mono: 'Fira Code', monospace;
   --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,7 +35,7 @@ body {
 /* Section borders */
 section {
   padding: 80px 8%;
-  border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+  border-bottom: 1px solid var(--border-light);
 }
 
 /* Navigation Bar (Sleek Black Block) */
@@ -90,7 +92,7 @@ section {
   display: block;
   width: 40px;
   height: 2px;
-  background-color: var(--bg-dark-block);
+  background-color: var(--accent);
   margin: 12px auto 0;
 }
 
@@ -113,8 +115,9 @@ section {
 
 .badge {
   display: inline-block;
-  background-color: var(--bg-dark-block);
-  color: var(--text-on-dark);
+  background-color: rgba(56, 189, 248, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(56, 189, 248, 0.2);
   padding: 6px 14px;
   border-radius: var(--border-radius-md);
   font-size: 0.85rem;
@@ -138,19 +141,20 @@ section {
 }
 
 .btn-primary {
-  background-color: var(--bg-dark-block);
-  color: var(--text-on-dark);
+  background-color: var(--accent);
+  color: var(--bg-main);
   padding: 12px 28px;
   border-radius: var(--border-radius-md);
   font-weight: 600;
   display: inline-block;
-  border: 2px solid var(--bg-dark-block);
+  border: 2px solid var(--accent);
   transition: var(--transition-smooth);
+  text-decoration: none;
 }
 
 .btn-primary:hover {
   background-color: transparent;
-  color: var(--text-on-light);
+  color: var(--accent);
 }
 
 /* About Grid Layout */
@@ -230,6 +234,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-family: var(--font-mono);
+  color: var(--accent-alt);
 }
 
 .stat-label {
@@ -257,7 +262,7 @@ section {
 }
 
 .skills-table th {
-  background-color: #1a1a1a;
+  background-color: rgba(255, 255, 255, 0.05);
   color: var(--text-on-dark);
   padding: 18px 24px;
   font-weight: 600;
@@ -273,7 +278,7 @@ section {
 }
 
 .skills-table tbody tr:hover td {
-  background-color: #222222;
+  background-color: rgba(255, 255, 255, 0.02);
   color: var(--text-on-dark);
 }
 
@@ -330,7 +335,7 @@ section {
   content: '▪';
   position: absolute;
   left: 0;
-  color: var(--text-on-dark);
+  color: var(--accent);
   font-size: 1rem;
 }
 
@@ -399,7 +404,7 @@ section {
 }
 
 .tech-tag {
-  background-color: #1a1a1a;
+  background-color: var(--bg-main);
   border: 1px solid var(--border-dark);
   color: var(--text-muted-dark);
   padding: 4px 10px;
@@ -410,8 +415,8 @@ section {
 
 /* Beautiful Action Button inside cards */
 .project-link-btn {
-  background-color: var(--text-on-dark);
-  color: var(--bg-dark-block);
+  background-color: var(--accent);
+  color: var(--bg-main);
   padding: 10px 20px;
   border-radius: var(--border-radius-md);
   font-size: 0.85rem;
@@ -419,13 +424,13 @@ section {
   display: inline-block;
   text-align: center;
   width: max-content;
-  border: 2px solid var(--text-on-dark);
+  border: 2px solid var(--accent);
   transition: var(--transition-smooth);
 }
 
 .project-link-btn:hover {
   background-color: transparent;
-  color: var(--text-on-dark);
+  color: var(--accent);
   cursor: pointer;
 }
 
@@ -462,7 +467,7 @@ section {
 }
 
 .contact-link-box {
-  background-color: #1a1a1a;
+  background-color: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--border-dark);
   border-radius: var(--border-radius-lg);
   padding: 20px;
@@ -473,7 +478,7 @@ section {
 }
 
 .contact-link-box:hover {
-  background-color: #222222;
+  background-color: rgba(255, 255, 255, 0.05);
   transform: translateY(-2px);
 }
 
@@ -520,26 +525,32 @@ section {
 
 /* Active Nav Links styling */
 .nav-links a.active {
-  color: var(--text-on-dark) !important;
+  color: var(--accent) !important;
   text-decoration: underline !important;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 /* Primary Small Button (Navbar Contact) */
 .btn-primary-small {
-  background-color: var(--bg-dark-block);
-  color: var(--text-on-dark);
+  background-color: transparent;
+  color: var(--accent);
   padding: 8px 18px;
   border-radius: var(--border-radius-md);
   font-weight: 600;
   display: inline-block;
-  border: 2px solid var(--text-on-dark);
+  border: 2px solid var(--accent);
   transition: var(--transition-smooth);
   text-decoration: none !important;
 }
 
 .btn-primary-small:hover {
-  background-color: var(--text-on-dark);
-  color: var(--bg-dark-block);
+  background-color: var(--accent) !important;
+  color: #000000 !important;
+  text-decoration: none !important;
 }
 
 /* Project Category Filters */
@@ -554,7 +565,7 @@ section {
 .filter-btn {
   background-color: transparent;
   color: var(--text-on-light);
-  border: 2px solid var(--bg-dark-block);
+  border: 2px solid var(--border-light);
   padding: 8px 20px;
   font-family: var(--font-sans);
   font-weight: 600;
@@ -565,12 +576,13 @@ section {
 }
 
 .filter-btn:hover {
-  background-color: rgba(18, 18, 18, 0.05);
+  background-color: rgba(255, 255, 255, 0.03);
 }
 
 .filter-btn.active {
-  background-color: var(--bg-dark-block);
-  color: var(--text-on-dark);
+  background-color: var(--accent);
+  color: var(--bg-main);
+  border-color: var(--accent);
 }
 
 /* Responsive adjustments */
