@@ -1,0 +1,29 @@
+[
+  {
+    "id": "project-dns",
+    "title": "Self-Hosted Private DNS Resolver (AdGuard Home)",
+    "category": "systems",
+    "icon": "🛡️",
+    "url": "http://dns.salaxar.com",
+    "description": "Configured and maintained a secure, private DNS resolver using AdGuard Home on a Linux VPS and home server environment. Implemented network-wide ad-blocking, family safety filtering, and custom local DNS records to safely route private queries. Managed and mapped securely to the domain: dns.salaxar.com.",
+    "tech": ["Linux (Ubuntu)", "AdGuard Home", "DNS Security", "Home Server Config", "dns.salaxar.com"]
+  },
+  {
+    "id": "project-vaultwarden",
+    "title": "Self-Hosted Secure Password Manager (Vaultwarden)",
+    "category": "systems",
+    "icon": "🔑",
+    "url": "https://vault.salaxar.com",
+    "description": "Deployed and self-hosted a private, robust Vaultwarden instance (lightweight Bitwarden server) to secure personal credentials and secure logins. Managed configuration through a secure Linux service utilizing encryption keys and VPS resources mapped privately to the domain: vault.salaxar.com.",
+    "tech": ["Linux (Ubuntu)", "Vaultwarden", "Credential Encryption", "VPS Cloud Hosting", "vault.salaxar.com"]
+  },
+  {
+    "id": "project-cisco",
+    "title": "Cisco Enterprise Network Design & Configuration",
+    "category": "networking",
+    "icon": "🌐",
+    "url": "",
+    "description": "Designed and simulated corporate network infrastructures in Cisco Packet Tracer. Performed practical configuration of switches, routers, VLAN segmentations, interface trunking protocols, custom IP subnetting, dynamic OSPF routing, and secure static routing paths.",
+    "tech": ["Cisco Packet Tracer", "Switch & Router Config", "VLANs & Trunking", "IP Subnetting", "OSPF & Static Routing"]
+  }
+]
