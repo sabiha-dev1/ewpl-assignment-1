@@ -5,9 +5,7 @@ This repository contains the source code for my personal portfolio website, subm
 ## Student Credentials
 
 - **Name:** Mst Umme Sabiha
-- **Student ID:** 233311201
 - **Department:** Computer Science and Engineering (CSE)
-- **Section:** Section F
 
 ## Project Architecture
 
