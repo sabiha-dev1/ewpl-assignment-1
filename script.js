@@ -51,7 +51,7 @@ function loadStaticFallback() {
       "title": "Self-Hosted Private DNS Resolver (AdGuard Home)",
       "category": "systems",
       "icon": "🛡️",
-      "url": "http://dns.salaxar.com",
+      "url": "https://dns.salaxar.com",
       "description": "Configured and maintained a secure, private DNS resolver using AdGuard Home on a Linux VPS and home server environment. Implemented network-wide ad-blocking, family safety filtering, and custom local DNS records to safely route private queries. Managed and mapped securely to the domain: dns.salaxar.com.",
       "tech": ["Linux (Ubuntu)", "AdGuard Home", "DNS Security", "Home Server Config", "dns.salaxar.com"]
     },
