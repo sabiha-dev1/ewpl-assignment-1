@@ -1,0 +1,24 @@
+# Cloudflare Pages Custom Headers Configuration
+# Documentation: https://developers.cloudflare.com/pages/configuration/headers/
+
+# Global security headers for all paths
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Cache control and MIME type for dynamic project data
+/script.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+# Cache control for CSS stylesheets
+/styles.css
+  Cache-Control: public, max-age=86400
+
+# Cache control for JavaScript files
+/script.js
+  Cache-Control: public, max-age=86400
+
