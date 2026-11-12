@@ -14,7 +14,6 @@ This repository contains the source code for my personal portfolio website, engi
 
 ## Project Architecture
 
-<<<<<<< HEAD
 The application is structured into modular, clean files to showcase intermediate-level web programming concepts:
 - `index.html`: Holds the structure and semantic layout of the portfolio (navigation, hero, about me, skills, dynamic project container, and contact footer).
 - `styles.css`: Implements a modern dark-theme styling sheet with clean variables, responsive layout controls (Flexbox/Grid), customized hover actions, and styling for tables and classes/IDs.
@@ -85,4 +84,4 @@ If you prefer deploying directly from your local terminal:
    npx wrangler pages deploy . --project-name=portfolio-ummesabiha
    ```
 2. In the Cloudflare Dashboard under your Pages project, add the custom domain `portfolio.ummesabiha.com` under **Custom domains**.
->>>>>>> fa16fa3b64601d27006f60da239a7e75bc73ed83
+
