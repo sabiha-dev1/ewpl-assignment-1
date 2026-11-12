@@ -1,32 +1,32 @@
 [
   {
-    "id": "project-dns",
-    "title": "Self-Hosted Private DNS Resolver (AdGuard Home)",
+    "id": "project-blog",
+    "title": "Personal Tech & Cybersecurity Blog",
     "category": "systems",
-    "icon": "🛡️",
-    "url": "http://dns.salaxar.com",
-    "description": "Configured and maintained a secure, private DNS resolver using AdGuard Home on a Linux VPS and home server environment. Implemented network-wide ad-blocking, family safety filtering, and custom local DNS records to safely route private queries. Managed and mapped securely to the domain: dns.salaxar.com.",
+    "icon": "📝",
+    "url": "https://blog.ummesabiha.com",
+    "description": "My personal technical blog built with Jekyll, focusing on network security, encryption, router administration, and personal projects. It also serves as a platform to encourage and inspire women in cybersecurity.",
     "tech": [
-      "Linux (Ubuntu)",
-      "AdGuard Home",
-      "DNS Security",
-      "Home Server Config",
-      "dns.salaxar.com"
+      "Jekyll",
+      "GitHub Pages",
+      "Cloudflare",
+      "Markdown",
+      "Blogging"
     ]
   },
   {
-    "id": "project-vaultwarden",
-    "title": "Self-Hosted Secure Password Manager (Vaultwarden)",
-    "category": "systems",
-    "icon": "🔑",
-    "url": "https://vault.salaxar.com",
-    "description": "Deployed and self-hosted a private, robust Vaultwarden instance (lightweight Bitwarden server) to secure personal credentials and secure logins. Managed configuration through a secure Linux service utilizing encryption keys and VPS resources mapped privately to the domain: vault.salaxar.com.",
+    "id": "project-znth",
+    "title": "ZNTH - Group Project Landing Page",
+    "category": "web",
+    "icon": "🚀",
+    "url": "https://znth.ummesabiha.com",
+    "description": "Collaborative group project focused on building a modern, responsive landing page. Managed domain routing and web deployment to make the project accessible online.",
     "tech": [
-      "Linux (Ubuntu)",
-      "Vaultwarden",
-      "Credential Encryption",
-      "VPS Cloud Hosting",
-      "vault.salaxar.com"
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Web Deployment",
+      "Collaboration"
     ]
   },
   {
