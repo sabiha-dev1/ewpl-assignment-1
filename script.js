@@ -1,3 +1,5 @@
+// script.js
+
 // Global variable to hold loaded project data from script.json
 let allProjectsData = [];
 
@@ -31,11 +33,11 @@ function loadProjectsDatabase() {
       console.error("Error loading project records:", error);
       // Fallback display in case browser CORS blocks local file dynamic fetching
       projectsGrid.innerHTML = `
-        <div class="noscript-warning" style="grid-column: 1 / -1; text-align: center; background-color: var(--bg-dark-block); color: var(--text-on-dark); border: 1px solid var(--border-dark); padding: 20px; border-radius: var(--border-radius-lg);">
-          <strong>Dynamic JSON Load Notice:</strong> Could not fetch dynamic script.json automatically via HTTP request. 
-          This is normal when opening raw HTML files directly in browsers without a local web server (CORS restriction).
+        <div class="noscript-warning cyber-panel" style="grid-column: 1 / -1; text-align: center; padding: 30px;">
+          <strong>SYS.WARN:</strong> Could not fetch dynamic script.json automatically via HTTP request. 
+          <br>This is normal when opening raw HTML files directly in browsers without a local web server (CORS restriction).
           <br><br>
-          <button onclick="loadStaticFallback()" class="filter-btn active" style="margin-top: 10px; border: 1px solid var(--border-dark); background-color: var(--bg-main); color: var(--text-on-light); padding: 8px 18px; cursor: pointer; border-radius: var(--border-radius-md);">Load Fallback Data from Script Memory</button>
+          <button onclick="loadStaticFallback()" class="filter-btn active" style="margin-top: 10px;">[ INITIALIZE_FALLBACK_MEMORY ]</button>
         </div>
       `;
     });
@@ -47,22 +49,22 @@ function loadProjectsDatabase() {
 function loadStaticFallback() {
   allProjectsData = [
     {
-      "id": "project-blog",
-      "title": "Personal Tech Blog & Knowledge Base",
+      "id": "project-dns",
+      "title": "Self-Hosted Private DNS Resolver (AdGuard Home)",
       "category": "systems",
-      "icon": "📝",
-      "url": "https://blog.ummesabiha.com",
-      "description": "Authored and maintained an independent technical blog hosted at blog.ummesabiha.com. Features articles and hands-on documentation covering Linux systems, enterprise networking concepts, cloud infrastructure, and self-hosted environments.",
-      "tech": ["Technical Writing", "Linux", "Cloud Infrastructure", "blog.ummesabiha.com"]
+      "icon": "🛡️",
+      "url": "http://dns.salaxar.com",
+      "description": "Configured and maintained a secure, private DNS resolver using AdGuard Home on a Linux VPS and home server environment. Implemented network-wide ad-blocking, family safety filtering, and custom local DNS records to safely route private queries. Managed and mapped securely to the domain: dns.salaxar.com.",
+      "tech": ["Linux (Ubuntu)", "AdGuard Home", "DNS Security", "Home Server Config", "dns.salaxar.com"]
     },
     {
-      "id": "project-cloud-vps",
-      "title": "Linux Cloud Infrastructure & Server Administration",
+      "id": "project-vaultwarden",
+      "title": "Self-Hosted Secure Password Manager (Vaultwarden)",
       "category": "systems",
-      "icon": "🐧",
-      "url": "",
-      "description": "Configured, hardened, and maintained Linux virtual servers on AWS and Oracle Cloud Infrastructure (OCI). Implemented SSH key-based access controls, automated package updates, firewall configurations, and local system monitoring.",
-      "tech": ["Linux (Ubuntu)", "AWS VPS", "Oracle Cloud (OCI)", "SysAdmin", "UFW Firewall"]
+      "icon": "🔑",
+      "url": "https://vault.salaxar.com",
+      "description": "Deployed and self-hosted a private, robust Vaultwarden instance (lightweight Bitwarden server) to secure personal credentials and secure logins. Managed configuration through a secure Linux service utilizing encryption keys and VPS resources mapped privately to the domain: vault.salaxar.com.",
+      "tech": ["Linux (Ubuntu)", "Vaultwarden", "Credential Encryption", "VPS Cloud Hosting", "vault.salaxar.com"]
     },
     {
       "id": "project-cisco",
@@ -85,7 +87,7 @@ function renderProjects(projectsArray) {
   projectsGrid.innerHTML = ""; // Clear existing grid space
 
   if (projectsArray.length === 0) {
-    projectsGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--text-muted-light);">No projects found.</p>`;
+    projectsGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--text-muted-light);">ERR_NO_DATA: No projects found in directory.</p>`;
     return;
   }
 
@@ -105,7 +107,7 @@ function renderProjects(projectsArray) {
 
     const badge = document.createElement("span");
     badge.className = "project-category-badge";
-    badge.textContent = proj.category;
+    badge.textContent = `[ ${proj.category.toUpperCase()} ]`;
 
     header.appendChild(iconBox);
     header.appendChild(badge);
@@ -141,7 +143,7 @@ function renderProjects(projectsArray) {
       linkBtn.target = "_blank";
       linkBtn.rel = "noopener";
       linkBtn.className = "project-link-btn";
-      linkBtn.textContent = "Visit Website ↗";
+      linkBtn.textContent = ">_ ACCESS_NODE"; // Updated for futuristic theme
       card.appendChild(linkBtn);
     }
 

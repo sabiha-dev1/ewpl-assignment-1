@@ -1,21 +1,33 @@
 [
   {
-    "id": "project-blog",
-    "title": "Personal Tech Blog & Knowledge Base",
+    "id": "project-dns",
+    "title": "Self-Hosted Private DNS Resolver (AdGuard Home)",
     "category": "systems",
-    "icon": "📝",
-    "url": "https://blog.ummesabiha.com",
-    "description": "Authored and maintained an independent technical blog hosted at blog.ummesabiha.com. Features articles and hands-on documentation covering Linux systems, enterprise networking concepts, cloud infrastructure, and self-hosted environments.",
-    "tech": ["Technical Writing", "Linux", "Cloud Infrastructure", "blog.ummesabiha.com"]
+    "icon": "🛡️",
+    "url": "http://dns.salaxar.com",
+    "description": "Configured and maintained a secure, private DNS resolver using AdGuard Home on a Linux VPS and home server environment. Implemented network-wide ad-blocking, family safety filtering, and custom local DNS records to safely route private queries. Managed and mapped securely to the domain: dns.salaxar.com.",
+    "tech": [
+      "Linux (Ubuntu)",
+      "AdGuard Home",
+      "DNS Security",
+      "Home Server Config",
+      "dns.salaxar.com"
+    ]
   },
   {
-    "id": "project-cloud-vps",
-    "title": "Linux Cloud Infrastructure & Server Administration",
+    "id": "project-vaultwarden",
+    "title": "Self-Hosted Secure Password Manager (Vaultwarden)",
     "category": "systems",
-    "icon": "🐧",
-    "url": "",
-    "description": "Configured, hardened, and maintained Linux virtual servers on AWS and Oracle Cloud Infrastructure (OCI). Implemented SSH key-based access controls, automated package updates, firewall configurations, and local system monitoring.",
-    "tech": ["Linux (Ubuntu)", "AWS VPS", "Oracle Cloud (OCI)", "SysAdmin", "UFW Firewall"]
+    "icon": "🔑",
+    "url": "https://vault.salaxar.com",
+    "description": "Deployed and self-hosted a private, robust Vaultwarden instance (lightweight Bitwarden server) to secure personal credentials and secure logins. Managed configuration through a secure Linux service utilizing encryption keys and VPS resources mapped privately to the domain: vault.salaxar.com.",
+    "tech": [
+      "Linux (Ubuntu)",
+      "Vaultwarden",
+      "Credential Encryption",
+      "VPS Cloud Hosting",
+      "vault.salaxar.com"
+    ]
   },
   {
     "id": "project-cisco",
@@ -24,6 +36,12 @@
     "icon": "🌐",
     "url": "",
     "description": "Designed and simulated corporate network infrastructures in Cisco Packet Tracer. Performed practical configuration of switches, routers, VLAN segmentations, interface trunking protocols, custom IP subnetting, dynamic OSPF routing, and secure static routing paths.",
-    "tech": ["Cisco Packet Tracer", "Switch & Router Config", "VLANs & Trunking", "IP Subnetting", "OSPF & Static Routing"]
+    "tech": [
+      "Cisco Packet Tracer",
+      "Switch & Router Config",
+      "VLANs & Trunking",
+      "IP Subnetting",
+      "OSPF & Static Routing"
+    ]
   }
 ]
