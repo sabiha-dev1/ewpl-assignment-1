@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "ewpl-assignment-1",
+  "name": "portfolio-ummesabiha",
   "compatibility_date": "2026-06-01",
   "observability": {
     "enabled": true
@@ -8,6 +8,12 @@
   "assets": {
     "directory": "."
   },
+  "routes": [
+    {
+      "pattern": "portfolio.ummesabiha.com",
+      "custom_domain": true
+    }
+  ],
   "compatibility_flags": [
     "nodejs_compat"
   ]

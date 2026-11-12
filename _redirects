@@ -1,0 +1,6 @@
+# Cloudflare Pages Redirects Configuration
+# Documentation: https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Redirect /index.html to root canonical URL
+/index.html   /   301
+
